@@ -1,0 +1,423 @@
+[13-Sep-2025 15:55:04 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: There is no active transaction in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expense_delete2.php:35
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expense_delete2.php(35): PDO->commit()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expense_delete2.php on line 35
+[13-Sep-2025 15:58:12 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php:127
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php(127): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php on line 127
+[13-Sep-2025 16:02:04 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php:127
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php(127): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php on line 127
+[13-Sep-2025 16:02:27 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php:127
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php(127): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php on line 127
+[13-Sep-2025 16:03:14 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 216
+[13-Sep-2025 16:03:24 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 216
+[13-Sep-2025 16:03:46 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 216
+[13-Sep-2025 16:04:06 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 216
+[13-Sep-2025 16:07:27 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 216
+[13-Sep-2025 16:07:54 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 216
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:41:51 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:58 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:42:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:01 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:09 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:18 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:44 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:53 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:43:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:44:03 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:45:05 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "brand_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "model_name" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 179
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Warning:  Undefined array key "year" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 16:46:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 180
+[13-Sep-2025 17:06:41 Asia/Bangkok] PHP Warning:  Undefined array key "status" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sales.php on line 118
+[13-Sep-2025 17:06:45 Asia/Bangkok] PHP Warning:  Undefined array key "status" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sales.php on line 118
+[13-Sep-2025 17:07:01 Asia/Bangkok] PHP Warning:  Undefined array key "status" in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sales.php on line 118
+[13-Sep-2025 17:11:02 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php:44
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php(44): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 44
+[13-Sep-2025 17:11:08 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php:44
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php(44): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 44
+[13-Sep-2025 17:11:14 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php:44
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php(44): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 44
+[13-Sep-2025 17:11:25 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'category' cannot be null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expense_add.php:104
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expense_add.php(104): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expense_add.php on line 104
+[13-Sep-2025 17:12:25 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php:44
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php(44): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 44
+[14-Sep-2025 09:08:55 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'status' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php:44
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php(44): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 44
+[14-Sep-2025 18:22:46 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'type_value' in 'INSERT INTO' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php:54
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php(54): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php on line 54
+[15-Sep-2025 12:59:18 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'supplier_id' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php:38
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php(38): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php on line 38
+[15-Sep-2025 12:59:23 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'supplier_id' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php:38
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php(38): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php on line 38
+[15-Sep-2025 13:19:05 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'supplier_id' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php:38
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php(38): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php on line 38
+[15-Sep-2025 13:24:39 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:25:11 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:25:25 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:25:51 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:25:56 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:27:01 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:27:41 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:27:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:28:29 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:28:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:29:22 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:29:52 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:30:05 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:36:09 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:37:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:37:26 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:37:35 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:38:47 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:39:27 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:39:56 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:40:32 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:40:42 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:48:31 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 13:56:30 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 14:22:42 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 14:42:37 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'supplier_id' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php:38
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php(38): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php on line 38
+[15-Sep-2025 14:49:29 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 14:52:54 Asia/Bangkok] PHP Warning:  Undefined variable $finalDocNo in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php on line 91
+[15-Sep-2025 15:37:01 Asia/Bangkok] PHP Warning:  Undefined variable $finalDocNo in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php on line 91
+[15-Sep-2025 15:39:47 Asia/Bangkok] PHP Warning:  Undefined variable $finalDocNo in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php on line 91
+[15-Sep-2025 15:42:14 Asia/Bangkok] PHP Warning:  Undefined variable $finalDocNo in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/sale_add.php on line 91
+[15-Sep-2025 16:34:01 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[15-Sep-2025 16:34:03 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[15-Sep-2025 16:53:49 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'supplier_id' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php:38
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php(38): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php on line 38
+[15-Sep-2025 20:06:01 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Sep-2025 20:23:32 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'supplier_id' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php:38
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php(38): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/supplier_delete.php on line 38
+[17-Sep-2025 13:25:09 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_add.php:110
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_add.php(110): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_add.php on line 110
+[17-Sep-2025 13:25:37 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_add.php:110
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_add.php(110): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_add.php on line 110
+[17-Sep-2025 13:32:04 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[17-Sep-2025 13:32:18 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[17-Sep-2025 13:32:42 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[17-Sep-2025 13:50:34 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[17-Sep-2025 16:19:13 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[18-Sep-2025 08:47:53 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[18-Sep-2025 09:14:17 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[18-Sep-2025 09:14:19 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[18-Sep-2025 09:14:22 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[18-Sep-2025 09:21:16 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[18-Sep-2025 09:55:09 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[18-Sep-2025 09:55:11 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[18-Sep-2025 10:44:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[18-Sep-2025 11:15:51 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[18-Sep-2025 11:27:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 08:55:10 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:101
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(101): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 101
+[19-Sep-2025 09:51:52 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 10:02:39 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 12:55:14 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 12:55:16 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 12:58:22 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 13:00:38 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 13:04:23 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 13:08:52 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 13:09:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 13:20:30 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 13:36:04 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[19-Sep-2025 13:42:36 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[20-Sep-2025 10:14:13 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[20-Sep-2025 10:14:41 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[21-Sep-2025 14:51:25 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'machine_id' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:78
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(78): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 78
+[21-Sep-2025 14:51:53 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S21]: Column already exists: 1060 Duplicate column name 'machine_id' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:78
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(78): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 78
+[21-Sep-2025 15:24:16 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[21-Sep-2025 15:24:37 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231

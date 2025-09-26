@@ -99,7 +99,7 @@ $cats = array_keys($catMap);
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ค่าใช้จ่ายรายคัน — ProInspect Machinery</title>
   <!-- ใช้ absolute path กันพาธเพี้ยน -->
-  <link rel="stylesheet" href="/assets/style.css?v=40">
+  <link rel="stylesheet" href="assets/style.css?v=40">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>

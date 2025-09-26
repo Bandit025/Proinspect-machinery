@@ -49,7 +49,7 @@ function thb($n){ return $n !== null ? '฿' . number_format((float)$n, 2) : '-'
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ซื้อรถเข้า — ProInspect Machinery</title>
   <!-- ใช้พาธแบบ absolute กันพลาด -->
-  <link rel="stylesheet" href="/assets/style.css?v=40">
+  <link rel="stylesheet" href="assets/style.css?v=9">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>

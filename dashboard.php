@@ -70,7 +70,7 @@ $rows_stock = $pdo->query($sql_stock)->fetchAll(PDO::FETCH_ASSOC);
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>แดชบอร์ด — ProInspect Machinery</title>
   <!-- ใช้ style.css เวอร์ชันล่าสุดที่มี .grid/.grid-3/.num-xl/.hide-sm/.td-right -->
-  <link rel="stylesheet" href="/assets/style.css?v=40">
+  <link rel="stylesheet" href="assets/style.css?v=40">
 </head>
 <body>
 
@@ -135,7 +135,7 @@ $rows_stock = $pdo->query($sql_stock)->fetchAll(PDO::FETCH_ASSOC);
         <div class="card" style="margin:0;">
           <div class="muted">กำลังซ่อมบำรุง</div>
           <div class="num-xl"><?= number_format($total_count_machines_fix) ?></div>
-          <div class="muted" style="font-size:.9rem;">มีงานค้าง 2 รายการ</div>
+          <div class="muted" style="font-size:.9rem;">อัปเดตล่าสุดวันนี้</div>
         </div>
 
         <div class="card" style="margin:0;">

@@ -59,7 +59,7 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ขายรถออก — ProInspect Machinery</title>
-  <link rel="stylesheet" href="/assets/style.css?v=40">
+  <link rel="stylesheet" href="assets/style.css?v=40">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 

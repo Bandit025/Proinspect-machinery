@@ -7,7 +7,7 @@ function active($file){ global $active; return $active === $file ? 'active' : ''
 
 // กันกรณียังไม่ include config.php
 if (!defined('APP_VERSION')) {
-  define('APP_VERSION', '1.2.1');
+  define('APP_VERSION', '1.3.0');
 }
 ?>
 <aside class="sidebar">

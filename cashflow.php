@@ -7,42 +7,30 @@ if (empty($_SESSION['user'])) {
 $user = $_SESSION['user'];
 
 /* ---------- Helpers ---------- */
-function h($s)
-{
-  return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8');
-}
-function thb($n)
-{
-  return '฿' . number_format((float)$n, 2);
-}
+function h($s){ return htmlspecialchars((string)$s, ENT_QUOTES, 'UTF-8'); }
+function thb($n){ return '฿' . number_format((float)$n, 2); }
 $roleName = ((int)($user['role'] ?? 1) === 2) ? 'ผู้ดูแลระบบ' : 'ผู้ใช้งาน';
 
 /* ---------- CSRF ---------- */
 if (empty($_SESSION['csrf'])) $_SESSION['csrf'] = bin2hex(random_bytes(16));
 $csrf = $_SESSION['csrf'];
 
-/* ---------- Filters: start/end date (GET) ---------- */
-$d1 = trim($_GET['d1'] ?? '');
-$d2 = trim($_GET['d2'] ?? '');
-
-$validateYmd = function ($s) {
+/* ---------- Filter: เลือกเดือนเดียว (GET m = YYYY-MM) ---------- */
+$validateYm = function ($s) {
   if ($s === '') return '';
-  $dt = DateTime::createFromFormat('Y-m-d', $s);
-  return ($dt && $dt->format('Y-m-d') === $s) ? $s : '';
+  $dt = DateTime::createFromFormat('Y-m', $s);
+  return ($dt && $dt->format('Y-m') === $s) ? $s : '';
 };
+$m = $validateYm(trim($_GET['m'] ?? ''));
+if ($m === '') $m = date('Y-m');          // ค่าเริ่มต้น = เดือนปัจจุบัน
 
-$d1 = $validateYmd($d1);
-$d2 = $validateYmd($d2);
+$d1  = $m . '-01';                        // วันแรกของเดือนที่เลือก
+$d2  = date('Y-m-t', strtotime($d1));     // วันสุดท้ายของเดือนที่เลือก
+$d2p = date('Y-m-d', strtotime($d2 . ' +1 day')); // ขอบบนแบบ exclusive
 
-/* NEW RULE:
-   - ถ้า d2 < d1 ให้ปรับ d1 = d2 (ช่วงจะกลายเป็นวันเดียวกันของ d2)
-*/
-if ($d1 && $d2 && $d2 < $d1) {
-  $d1 = $d2;
-}
-
-$d2p = $d2 ? date('Y-m-d', strtotime($d2 . ' +1 day')) : '';
-
+/* Label เดือนที่เลือก (ไทยสั้น) */
+$thaiMonths = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+$monthLabel = $thaiMonths[(int)date('n', strtotime($d1)) - 1] . ' ' . date('Y', strtotime($d1));
 
 /* ---------- AJAX: ลบรายการ cashflow ---------- */
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ajax'])) {
@@ -68,44 +56,52 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ajax'])) {
   exit;
 }
 
-/* ---------- ช่วงเดือนปัจจุบัน (ใช้ doc_date) ---------- */
-$monthStart = date('Y-m-01');
-$monthEnd   = date('Y-m-01', strtotime($monthStart . ' +1 month'));
+/* ---------- KPI: เดือนที่เลือก (อิง created_at) ---------- */
+$stmIn = $pdo->prepare("
+  SELECT COALESCE(SUM(amount),0)
+  FROM cashflow
+  WHERE type_cashflow = 1
+    AND created_at >= :d1 AND created_at < :d2
+");
+$stmEx = $pdo->prepare("
+  SELECT COALESCE(SUM(amount),0)
+  FROM cashflow
+  WHERE type_cashflow = 2
+    AND created_at >= :d1 AND created_at < :d2
+");
+$stmIn->execute([':d1' => $d1, ':d2' => $d2p]);
+$stmEx->execute([':d1' => $d1, ':d2' => $d2p]);
 
-/* ---------- ยอดสะสมทั้งหมด ---------- */
-$income_total  = (float)$pdo->query("SELECT COALESCE(SUM(amount),0) FROM cashflow WHERE type_cashflow = 1")->fetchColumn();
-$expense_total = (float)$pdo->query("SELECT COALESCE(SUM(amount),0) FROM cashflow WHERE type_cashflow = 2")->fetchColumn();
-$profit_total  = $income_total - $expense_total;
-
-/* ---------- ยอดเดือนนี้ (doc_date ช่วงเดือน) ---------- */
-$stmIn = $pdo->prepare("SELECT COALESCE(SUM(amount),0) FROM cashflow WHERE type_cashflow=1 AND doc_date >= :d1 AND doc_date < :d2");
-$stmEx = $pdo->prepare("SELECT COALESCE(SUM(amount),0) FROM cashflow WHERE type_cashflow=2 AND doc_date >= :d1 AND doc_date < :d2");
-$stmIn->execute([':d1' => $monthStart, ':d2' => $monthEnd]);
-$stmEx->execute([':d1' => $monthStart, ':d2' => $monthEnd]);
 $income_month  = (float)$stmIn->fetchColumn();
 $expense_month = (float)$stmEx->fetchColumn();
 $profit_month  = $income_month - $expense_month;
 
-/* ---------- โหลดรายการ cashflow ---------- */
-$where = [];
+/* กำไรจากการขาย (PL) ของเดือนที่เลือก - อ้างอิงวันที่ขาย sold_at */
+$stmtPl = $pdo->prepare("
+  SELECT COALESCE(SUM(pl_amount), 0)
+  FROM sales
+  WHERE sold_at >= :d1 AND sold_at < :d2
+");
+/* ถ้า pl_amount เป็น TEXT/VARCHAR ให้ใช้ CAST:
+   SELECT COALESCE(SUM(CAST(pl_amount AS DECIMAL(15,2))), 0) ...
+*/
+$stmtPl->execute([':d1' => $d1, ':d2' => $d2p]);
+$profit_sales_month = (float) $stmtPl->fetchColumn();
+
+
+/* ---------- โหลดรายการ cashflow (อิง created_at ตามช่วงที่เลือก) ---------- */
+$where  = [];
 $params = [];
+$where[] = 'a.created_at >= :f_d1';  $params[':f_d1']  = $d1;
+$where[] = 'a.created_at < :f_d2p';  $params[':f_d2p'] = $d2p;
 
-// เงื่อนไข: ใช้ doc_date เป็นหลัก ถ้าเป็น NULL ให้ใช้ created_at แทน
-if ($d1) {
-  $where[] = '((a.doc_date IS NOT NULL AND a.doc_date >= :d1) OR (a.doc_date IS NULL AND a.created_at >= :d1))';
-  $params[':d1'] = $d1;
-}
-if ($d2p) {
-  $where[] = '((a.doc_date IS NOT NULL AND a.doc_date < :d2p) OR (a.doc_date IS NULL AND a.created_at < :d2p))';
-  $params[':d2p'] = $d2p;
-}
-$whereSql = $where ? ('WHERE ' . implode(' AND ', $where)) : '';
+$whereSql = 'WHERE ' . implode(' AND ', $where);
 
-$sql = "SELECT a.*, 
-               b.type_name AS type2_name,
-               c.code      AS machine_code,
+$sql = "SELECT a.*,
+               b.type_name  AS type2_name,
+               c.code       AS machine_code,
                d.model_name,
-               e.brand_name 
+               e.brand_name
         FROM cashflow a
         LEFT JOIN type2_cashflow b ON a.type2_cashflow = b.type_id
         LEFT JOIN machines        c ON a.machine_id     = c.machine_id
@@ -120,146 +116,34 @@ $cashflows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!doctype html>
 <html lang="th">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>กระแสเงินสด — ProInspect Machinery</title>
-  <link rel="stylesheet" href="assets/style.css?v=45">
+  <link rel="stylesheet" href="assets/style.css?v=46">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <style>
     /* ====== เพิ่มเติมเฉพาะหน้านี้ ====== */
-    .kpi-grid {
-      display: grid;
-      gap: 14px;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-    }
-
-    @media (max-width:1024px) {
-      .kpi-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    @media (max-width:560px) {
-      .kpi-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .num-xl {
-      font-size: clamp(1.2rem, 3.6vw, 1.8rem);
-      font-weight: 800;
-      line-height: 1.1;
-      margin: 4px 0;
-    }
-
-    .money {
-      text-align: right;
-      white-space: nowrap;
-    }
-
-    .badge.income {
-      background: rgba(46, 204, 113, .14);
-      border: 1px solid rgba(46, 204, 113, .35);
-      color: #0f7a3a;
-      padding: 3px 8px;
-      border-radius: 999px;
-      font-size: .86rem;
-    }
-
-    .badge.expense {
-      background: rgba(217, 48, 37, .12);
-      border: 1px solid rgba(217, 48, 37, .35);
-      color: #9c1f16;
-      padding: 3px 8px;
-      border-radius: 999px;
-      font-size: .86rem;
-    }
-
-    /* toolbar บนหัวการ์ด */
-    .toolbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 10px;
-      flex-wrap: wrap;
-    }
-
-    .toolbar .right {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex-wrap: wrap;
-    }
-
-    @media (max-width:720px) {
-      .toolbar {
-        flex-direction: column;
-        align-items: stretch;
-      }
-
-      .toolbar .right {
-        justify-content: flex-end;
-      }
-
-      .table-wrap {
-        overflow: auto;
-      }
-    }
-
-    /* คอลัมน์กว้างขึ้นเล็กน้อยให้ตารางอ่านง่าย */
-    .table thead th,
-    .table td {
-      vertical-align: top;
-    }
-
-    .td-actions {
-      white-space: nowrap;
-      text-align: right;
-    }
-
-    .inline-filter {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      flex-wrap: nowrap;
-      /* บังคับให้อยู่บรรทัดเดียวบนจอปกติ */
-    }
-
-    .inline-filter label {
-      white-space: nowrap;
-      margin: 0 4px 0 12px;
-    }
-
-    .inline-filter .input.sm {
-      display: inline-block;
-      /* บล็อกอินพุตไม่ให้ขยายเต็มบรรทัด */
-      width: 160px;
-      /* กำหนดความกว้างคงที่ให้ input date */
-      max-width: 100%;
-    }
-
-    .inline-filter .btn,
-    .inline-filter .btn-light {
-      white-space: nowrap;
-      /* ปุ่มไม่ตัดคำ */
-    }
-
-    /* หน้าจอแคบค่อยให้ตัดบรรทัด เพื่อไม่ล้น */
-    @media (max-width:720px) {
-      .inline-filter {
-        flex-wrap: wrap;
-      }
-
-      .inline-filter .input.sm {
-        width: 100%;
-      }
-    }
+    .kpi-grid{ display:grid; gap:14px; grid-template-columns:repeat(3,minmax(0,1fr)); }
+    @media (max-width:1024px){ .kpi-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); } }
+    @media (max-width:560px){ .kpi-grid{ grid-template-columns:1fr; } }
+    .num-xl{ font-size:clamp(1.2rem,3.6vw,1.8rem); font-weight:800; line-height:1.1; margin:4px 0; }
+    .money{ text-align:right; white-space:nowrap; }
+    .badge.income{ background:rgba(46,204,113,.14); border:1px solid rgba(46,204,113,.35); color:#0f7a3a; padding:3px 8px; border-radius:999px; font-size:.86rem; }
+    .badge.expense{ background:rgba(217,48,37,.12); border:1px solid rgba(217,48,37,.35); color:#9c1f16; padding:3px 8px; border-radius:999px; font-size:.86rem; }
+    .toolbar{ display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+    .toolbar .right{ display:flex; align-items:center; gap:8px; flex-wrap:wrap; }
+    @media (max-width:720px){ .toolbar{ flex-direction:column; align-items:stretch; } .toolbar .right{ justify-content:flex-end; } .table-wrap{ overflow:auto; } }
+    .table thead th,.table td{ vertical-align:top; }
+    .td-actions{ white-space:nowrap; text-align:right; }
+    .inline-filter{ display:flex; align-items:center; gap:10px; flex-wrap:nowrap; }
+    .inline-filter label{ white-space:nowrap; margin:0 4px 0 12px; }
+    .inline-filter .input.sm{ display:inline-block; width:160px; max-width:100%; }
+    .inline-filter .btn,.inline-filter .btn-light{ white-space:nowrap; }
+    @media (max-width:720px){ .inline-filter{ flex-wrap:wrap; } .inline-filter .input.sm{ width:100%; } }
   </style>
 </head>
-
 <body>
   <?php include __DIR__ . '/navbar.php'; ?>
 
@@ -276,26 +160,31 @@ $cashflows = $stmt->fetchAll(PDO::FETCH_ASSOC);
       <!-- สรุปภาพรวม -->
       <section class="card" style="margin-top:12px;">
         <div class="card-head">
-          <h3 class="h5">สรุปเดือนนี้</h3>
+          <h3 class="h5">สรุปเดือนที่เลือก: <?= h($monthLabel) ?></h3>
         </div>
         <div class="kpi-grid">
           <div class="card" style="margin:0;">
-            <div class="muted">รายรับเดือนนี้</div>
+            <div class="muted">รายรับ</div>
             <div class="num-xl"><?= thb($income_month) ?></div>
-            <div class="muted" style="font-size:.9rem;"><?= date('M Y') ?></div>
+            <div class="muted" style="font-size:.9rem;"><?= h($monthLabel) ?></div>
           </div>
           <div class="card" style="margin:0;">
-            <div class="muted">รายจ่ายเดือนนี้</div>
+            <div class="muted">รายจ่าย</div>
             <div class="num-xl" style="color:#A30000;"><?= thb($expense_month) ?></div>
-            <div class="muted" style="font-size:.9rem;"><?= date('M Y') ?></div>
+            <div class="muted" style="font-size:.9rem;"><?= h($monthLabel) ?></div>
           </div>
           <div class="card" style="margin:0;">
-            <div class="muted">กำไรสุทธิเดือนนี้</div>
-            <div class="num-xl" style="color:<?= $profit_month >= 0 ? '#177500' : '#A30000' ?>;">
-              <?= thb($profit_month) ?>
-            </div>
-            <div class="muted" style="font-size:.9rem;">รายรับ - รายจ่าย</div>
-          </div>
+  <div class="muted">กำไรจากการขาย (PL)</div>
+  <div class="num-xl" style="color:<?= $profit_sales_month >= 0 ? '#177500' : '#A30000' ?>;">
+    <?= thb($profit_sales_month) ?>
+  </div>
+  <div class="muted" style="font-size:.9rem;">
+    <?= h($monthLabel) ?> • สุทธิจากกระแสเงินสด: 
+    <span style="color:<?= $profit_month >= 0 ? '#177500' : '#A30000' ?>;">
+      <?= thb($profit_month) ?>
+    </span>
+  </div>
+</div>
         </div>
       </section>
 
@@ -305,25 +194,14 @@ $cashflows = $stmt->fetchAll(PDO::FETCH_ASSOC);
           <h3 class="h5" style="margin:0;">รายการกระแสเงินสดทั้งหมด</h3>
           <div class="right">
             <form method="get" action="cashflow.php" class="inline-filter">
-              <label class="muted" style="font-size:.9rem;">เริ่ม</label>
-              <input type="date" id="d1" name="d1" value="<?= h($d1) ?>" class="input sm">
-              <label class="muted" style="font-size:.9rem;">สิ้นสุด</label>
-              <input type="date" id="d2" name="d2" value="<?= h($d2) ?>" class="input sm">
+              <label class="muted" style="font-size:.9rem;">เลือกเดือน</label>
+              <input type="month" id="m" name="m" value="<?= h($m) ?>" class="input sm">
               <button type="submit" class="btn sm">ค้นหา</button>
-              <?php if ($d1 || $d2): ?>
-                <a href="cashflow.php" class="btn sm btn-light">ล้าง</a>
-              <?php endif; ?>
+              <?php $exportQS = http_build_query(['d1' => $d1, 'd2' => $d2]); ?>
+              <a class="btn sm btn-success" target="_blank" href="export_cashflow.php?<?= $exportQS ?>">Export XLSX</a>
+              <a class="btn sm btn-light" href="cashflow.php">เดือนปัจจุบัน</a>
+              <a class="btn btn-brand sm" href="cashflow_add.php">เพิ่มรายการ</a>
             </form>
-            <?php
-            $exportQS = http_build_query([
-              'd1' => $d1,
-              'd2' => $d2
-            ]);
-            ?>
-            <a class="btn sm btn-success" target="_blank" href="export_cashflow.php?<?= $exportQS ?>">
-               Export XLSX
-            </a>
-            <a class="btn btn-brand sm" href="cashflow_add.php">เพิ่มรายการ</a>
           </div>
         </div>
 
@@ -350,7 +228,7 @@ $cashflows = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 $type2Name   = ($r['type2_name']   ?? '') !== '' ? $r['type2_name']   : '-';
                 $t           = (int)($r['type_cashflow'] ?? 0);
 
-                // วันที่ (doc_date > created_at)
+                // วันที่แสดงผล: doc_date ถ้ามี ไม่งั้น fallback เป็น created_at
                 $dateStr = '-';
                 if (!empty($r['doc_date']))       $dateStr = date('d/m/Y', strtotime($r['doc_date']));
                 elseif (!empty($r['created_at'])) $dateStr = date('d/m/Y', strtotime($r['created_at']));
@@ -402,6 +280,7 @@ $cashflows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
   <!-- สำคัญ: ให้ sidebar/hamburger ทำงาน -->
   <script src="assets/script.js?v=5"></script>
+
   <script>
     // ลบด้วย SweetAlert + AJAX
     document.querySelectorAll('.delBtn').forEach(btn => {
@@ -424,63 +303,22 @@ $cashflows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
           fetch(form.getAttribute('action') || window.location.pathname, {
               method: 'POST',
-              headers: {
-                'X-Requested-With': 'XMLHttpRequest'
-              },
+              headers: { 'X-Requested-With': 'XMLHttpRequest' },
               body: new URLSearchParams([...fd.entries()])
             })
             .then(r => r.json())
             .then(j => {
               if (j && j.ok) {
-                Swal.fire({
-                    icon: 'success',
-                    title: 'ลบแล้ว',
-                    timer: 900,
-                    showConfirmButton: false
-                  })
+                Swal.fire({ icon:'success', title:'ลบแล้ว', timer:900, showConfirmButton:false })
                   .then(() => location.href = 'cashflow.php?ok=' + encodeURIComponent('ลบรายการเรียบร้อย'));
               } else {
-                Swal.fire({
-                  icon: 'error',
-                  title: 'ลบไม่สำเร็จ',
-                  text: (j && j.error) ? j.error : 'เกิดข้อผิดพลาด',
-                  confirmButtonColor: '#e11d48'
-                });
+                Swal.fire({ icon:'error', title:'ลบไม่สำเร็จ', text:(j && j.error) ? j.error : 'เกิดข้อผิดพลาด', confirmButtonColor:'#e11d48' });
               }
             })
-            .catch(() => Swal.fire({
-              icon: 'error',
-              title: 'ลบไม่สำเร็จ',
-              text: 'เครือข่ายผิดพลาด',
-              confirmButtonColor: '#e11d48'
-            }));
+            .catch(() => Swal.fire({ icon:'error', title:'ลบไม่สำเร็จ', text:'เครือข่ายผิดพลาด', confirmButtonColor:'#e11d48' }));
         });
       });
     });
   </script>
-  <script>
-    // กติกา:
-    // 1) เมื่อเลือก "วันที่เริ่ม" แล้วถ้า "วันที่สิ้นสุด" ยังว่าง -> ตั้งให้เท่ากับวันที่เริ่ม
-    // 2) ถ้า "วันที่สิ้นสุด" น้อยกว่า "วันที่เริ่ม" -> ตั้ง "วันที่เริ่ม" ให้เท่ากับ "วันที่สิ้นสุด"
-    document.addEventListener('DOMContentLoaded', function() {
-      const d1 = document.getElementById('d1');
-      const d2 = document.getElementById('d2');
-      if (!d1 || !d2) return;
-
-      function normalizeRange() {
-        if (d1.value && !d2.value) {
-          d2.value = d1.value; // กรณีเลือก d1 แต่ d2 ว่าง
-        }
-        if (d1.value && d2.value && d2.value < d1.value) {
-          d1.value = d2.value; // ถ้า d2 < d1 ให้ d1 = d2
-        }
-      }
-
-      d1.addEventListener('change', normalizeRange);
-      d2.addEventListener('change', normalizeRange);
-    });
-  </script>
-
 </body>
-
 </html>

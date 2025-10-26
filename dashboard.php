@@ -48,7 +48,19 @@ $row_7 = $pdo->query($sql_income_month)->fetch(PDO::FETCH_ASSOC);
 $total_income_month = (float)($row_7['total_income'] ?? 0);
 
 /* กำไรเดือนนี้ (เก็บทั้งตัวเลขจริงและฟอร์แมต) */
-$profit_month     = $total_income_month - $total_expense_month;
+/* กำไรเดือนนี้จาก sales (SUM pl_amount เฉพาะเดือนปัจจุบัน) */
+$sql_profit_sales_month = "
+  SELECT COALESCE(SUM(pl_amount), 0) AS profit_month
+  FROM sales
+  WHERE sold_at >= DATE_FORMAT(CURDATE(), '%Y-%m-01')
+    AND sold_at  < DATE_FORMAT(DATE_ADD(CURDATE(), INTERVAL 1 MONTH), '%Y-%m-01')
+";
+/* ถ้า pl_amount เป็น TEXT/VARCHAR ให้ใช้ CAST:
+   SELECT COALESCE(SUM(CAST(pl_amount AS DECIMAL(15,2))),0) AS profit_month
+   ... ตามเงื่อนไขเดียวกัน
+*/
+$row_p = $pdo->query($sql_profit_sales_month)->fetch(PDO::FETCH_ASSOC);
+$profit_month     = (float)($row_p['profit_month'] ?? 0);
 $profit_month_fmt = number_format($profit_month, 2);
 
 /* ---------- สต๊อกล่าสุด 5 รายการ ---------- */

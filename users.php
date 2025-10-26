@@ -1,11 +1,13 @@
 <?php
 require __DIR__ . '/config.php';
-
+$isAdmin = !empty($_SESSION['user']) && (int)($_SESSION['user']['role'] ?? 1) === 2;
 // อนุญาตเฉพาะแอดมิน (role = 2)
-// if (empty($_SESSION['user']) || (int)($_SESSION['user']['role'] ?? 1) !== 2) {
-//   header('Location: index.php?error=' . urlencode('จำกัดสิทธิ์เฉพาะผู้ดูแลระบบ'));
-//   exit;
-// }
+// if (empty($_SESSION['user']) || (int)($_SESSION['user']['role'] ?? 1) !== 2) 
+
+
+// ... ด้านบนไฟล์หลังประกาศ $csrf
+$currentUserId = (int)($_SESSION['user']['user_id'] ?? ($_SESSION['user']['id'] ?? 0));
+
 
 $ok = $_GET['ok'] ?? '';
 $err = $_GET['error'] ?? '';
@@ -89,6 +91,7 @@ function role_name(int $r): string
                   <th>สิทธิ์</th>
                   <th>สร้างเมื่อ</th>
                   <th class="tr" style="width:160px;">การทำงาน</th>
+                  <th class="tr" style="width:160px;">การทำงาน</th>  
                 </tr>
               </thead>
               <tbody>
@@ -100,17 +103,33 @@ function role_name(int $r): string
                     <td><?= role_name((int)$r['urole']) ?></td>
                     <td><?= htmlspecialchars($r['created_at']) ?></td>
                     <td class="tr">
-                        <?php if ($isAdmin){ ?>
-                      <a class="link" href="edit.php?id=<?= (int)$r['user_id'] ?>">แก้ไข</a>
-                      <?php if ((int)$r['user_id'] !== (int)$_SESSION['user']['id']){ ?>
-                        <!-- ป้องกันลบตัวเอง -->
-                        <form action="delete.php" method="post" style="display:inline;" onsubmit="return confirm('ยืนยันการลบผู้ใช้นี้?');">
-                          <input type="hidden" name="csrf" value="<?= $csrf ?>">
-                          <input type="hidden" name="id" value="<?= (int)$r['user_id'] ?>">
-                          <button type="submit" class="link" style="border:none;background:none;color:#a40000;">ลบ</button>
-                        </form>
-                      <?php } } ?>
+                      <?php if ($isAdmin) { ?>
+                     
+                        <?php if ((int)$r['user_id'] !== (int)$_SESSION['user']['id']) { ?>
+                          <!-- ป้องกันลบตัวเอง -->
+                    <td class="tr">
+                      <?php if ($isAdmin) { ?>
+                        <a class="link btn btn-warning" href="edit.php?id=<?= (int)$r['user_id'] ?>">แก้ไข</a>
+
+                        <?php if ((int)$r['user_id'] !== $currentUserId) { ?>
+                          <!-- ป้องกันลบตัวเอง -->
+                          <form method="post" action="user_delete.php" class="js-del" style="display:inline;">
+                            <input type="hidden" name="csrf" value="<?= htmlspecialchars($csrf) ?>">
+                            <!-- ส่ง id ให้ตรงกับคีย์ที่ลบ ใช้ $r ไม่ใช่ $row -->
+                            <input type="hidden" name="id" value="<?= (int)$r['user_id'] ?>">
+                            <!-- เผื่อไว้: บางเวอร์ชันอ่าน user_id ก็ใส่ให้ด้วย -->
+                            <input type="hidden" name="user_id" value="<?= (int)$r['user_id'] ?>">
+                            <input type="hidden" name="return_to" value="<?= htmlspecialchars($_SERVER['REQUEST_URI'], ENT_QUOTES) ?>">
+                            <button type="submit" class="btn btn-danger sm">ลบ</button>
+                          </form>
+                        <?php } ?>
+                      <?php } ?>
                     </td>
+
+
+                <?php }
+                      } ?>
+                </td>
                   </tr>
                 <?php endforeach; ?>
                 <?php if (!$rows): ?>
@@ -127,6 +146,12 @@ function role_name(int $r): string
   </div>
 
   <script src="assets/script.js"></script>
+  <script>
+    setTimeout(() => {
+      document.querySelectorAll('.alert').forEach(el => el.style.display = 'none');
+    }, 4000);
+  </script>
+
 </body>
 
 </html>

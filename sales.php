@@ -16,12 +16,40 @@ function sale_status_label_th(int $x): string {
   return [1=>'จอง',2=>'ออกใบกำกับ',3=>'รับชำระ',4=>'ส่งมอบ',9=>'ยกเลิก'][$x] ?? 'จอง';
 }
 
-$q   = trim($_GET['q'] ?? '');
-$d1  = trim($_GET['d1'] ?? '');
-$d2  = trim($_GET['d2'] ?? '');
-$st  = (int)($_GET['status'] ?? 0);
+/* =========================
+   ฟิลเตอร์ค้นหา
+   - q: คำค้น
+   - m: เดือนที่เลือก (YYYY-MM)
+   - status: สถานะการขาย
+   ========================= */
+$q  = trim($_GET['q'] ?? '');
+$st = (int)($_GET['status'] ?? 0);
 
-$params = [];
+/* เลือกเดือนเดียวเหมือน cashflow.php */
+$validateYm = function ($s) {
+  if ($s === '') return '';
+  $dt = DateTime::createFromFormat('Y-m', $s);
+  return ($dt && $dt->format('Y-m') === $s) ? $s : '';
+};
+$m = $validateYm(trim($_GET['m'] ?? ''));
+if ($m === '') $m = date('Y-m');          // ค่าเริ่มต้น = เดือนปัจจุบัน
+
+$d1  = $m . '-01';                        // วันแรกของเดือนที่เลือก
+$d2  = date('Y-m-t', strtotime($d1));     // วันสุดท้ายของเดือนที่เลือก
+$d2p = date('Y-m-d', strtotime($d2 . ' +1 day')); // ขอบบนแบบ exclusive
+
+/* label เดือนที่เลือก (ไทยสั้น เช่น ต.ค. 2025) */
+$thaiMonths = ['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+$monthLabel = $thaiMonths[(int)date('n', strtotime($d1)) - 1] . ' ' . date('Y', strtotime($d1));
+
+/* =========================
+   ดึงข้อมูล
+   ========================= */
+$params = [
+  ':d1'  => $d1,
+  ':d2p' => $d2p
+];
+
 $sql = "SELECT 
           s.*,
           m.code,
@@ -37,15 +65,18 @@ $sql = "SELECT
         JOIN customers      c  ON c.customer_id = s.customer_id
         LEFT JOIN machine_status d ON m.status  = d.status_id 
         LEFT JOIN pl_status e ON s.pl_status = e.pl_id
-        WHERE 1=1";
+        WHERE 1=1
+          AND s.sold_at >= :d1      /* ตั้งแต่วันแรกของเดือนที่เลือก */
+          AND s.sold_at  < :d2p";   /* จนก่อนวันแรกของเดือนถัดไป (ครอบคลุมทั้งเดือน) */
 
 if ($q !== '') {
   $sql .= " AND (s.doc_no LIKE :q OR m.code LIKE :q OR b.brand_name LIKE :q OR mo.model_name LIKE :q OR c.customer_name LIKE :q)";
   $params[':q'] = "%{$q}%";
 }
-if ($d1 !== '') { $sql .= " AND s.sold_at >= :d1"; $params[':d1'] = $d1; }
-if ($d2 !== '') { $sql .= " AND s.sold_at <= :d2"; $params[':d2'] = $d2; }
-if ($st  > 0)   { $sql .= " AND s.status  = :st";  $params[':st']  = $st; }
+if ($st > 0) {
+  $sql .= " AND s.status = :st";
+  $params[':st'] = $st;
+}
 
 $sql .= " ORDER BY s.sold_at DESC, s.sale_id DESC";
 
@@ -72,7 +103,7 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
     <main class="content">
       <div class="page-head">
         <h2 class="page-title">รายการขายรถออก (Sales)</h2>
-        <div class="page-sub">แสดง/ค้นหา/จัดการเอกสารขาย</div>
+        <div class="page-sub">แสดง/ค้นหา/จัดการเอกสารขาย • เดือนที่เลือก: <?= htmlspecialchars($monthLabel) ?></div>
       </div>
 
       <?php if ($ok): ?><div class="alert alert-success"><?= htmlspecialchars($ok) ?></div><?php endif; ?>
@@ -82,15 +113,15 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
         <div class="card-head">
           <h3 class="h5">รายการ</h3>
 
-          <!-- ✅ ใช้ toolbar + search-form: มือถือจะเรียงบน→ล่าง -->
+          <!-- ✅ toolbar + search-form -->
           <div class="toolbar">
             <form method="get" action="sales.php" class="search-form">
               <input class="input sm" type="text" name="q"
                      placeholder="เลขเอกสาร/รหัสรถ/ยี่ห้อ/รุ่น/ชื่อลูกค้า"
                      value="<?= htmlspecialchars($q) ?>">
 
-              <input class="input sm" type="date" name="d1" value="<?= htmlspecialchars($d1) ?>">
-              <input class="input sm" type="date" name="d2" value="<?= htmlspecialchars($d2) ?>">
+              <!-- เลือกเดือนเดียวแบบ cashflow -->
+              <input class="input sm" type="month" name="m" value="<?= htmlspecialchars($m) ?>">
 
               <select class="select sm" name="status">
                 <option value="0">ทุกสถานะ</option>
@@ -102,6 +133,7 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
               </select>
 
               <button class="btn btn-outline sm" type="submit">ค้นหา</button>
+              <a class="btn sm btn-light" href="sales.php">เดือนปัจจุบัน</a>
             </form>
 
             <a class="btn btn-brand sm add-btn" href="sale_add.php">เพิ่มเอกสารขาย</a>
@@ -140,7 +172,7 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
                   <td class="tr"><strong><?= thb($r['total_amount']) ?></strong></td>
                   <td class="tr"><?= thb($r['commission_amt']) ?></td>
 
-                  <!-- ✅ รวมชื่อสถานะ + ยอดใบกำกับไว้ในคอลัมน์เดียว ให้ตรงกับ thead -->
+                  <!-- สถานะใบกำกับ + ยอด -->
                   <td>
                     <?php
                       $isOk = (int)($r['pl_status'] ?? 0) === 1;

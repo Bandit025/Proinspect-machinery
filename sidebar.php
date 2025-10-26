@@ -7,7 +7,7 @@ function active($file){ global $active; return $active === $file ? 'active' : ''
 
 // กันกรณียังไม่ include config.php
 if (!defined('APP_VERSION')) {
-  define('APP_VERSION', '1.3.3');
+  define('APP_VERSION', '1.4.3');
 }
 ?>
 <aside class="sidebar">
@@ -41,11 +41,7 @@ if (!defined('APP_VERSION')) {
         <span class="icon">🏭</span><span class="item-label">สถานที่เก็บรถ</span></a></li> 
 
     <li><a class="<?= active('manage.php') ?>" href="manage.php">
-        <span class="icon">🗒️</span><span class="item-label">แบรนด์</span></a></li>
-
-    <li><a class="<?= active('models.php') ?>" href="models.php">
-        <span class="icon">🗒️</span><span class="item-label">รุ่น</span></a></li>
-
+        <span class="icon">🗒️</span><span class="item-label">จัดการข้อมูล</span></a></li>
     <li class="sep"></li>
 
     <li><a class="<?= active('users.php') ?>" href="users.php">

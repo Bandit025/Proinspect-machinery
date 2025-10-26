@@ -34,7 +34,8 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
   if (!$errors) {
     $upd = $pdo->prepare("UPDATE models SET brand_id=?, model_name=? WHERE model_id=?");
     $upd->execute([$brand_id, $model_name, $id]);
-    header('Location: models.php?ok=' . urlencode('บันทึกการแก้ไขเรียบร้อย')); exit;
+    header('Location: manage.php?ok=' . urlencode('บันทึกการแก้ไขเรียบร้อย')); 
+    exit;
   }
 }
 ?>
@@ -85,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
 
         <div style="margin-top:14px;display:flex;gap:8px;">
           <button class="btn btn-brand" type="submit">บันทึก</button>
-          <a class="btn btn-outline" href="models.php">ยกเลิก</a>
+          <a class="btn btn-outline" href="manage.php">ยกเลิก</a>
         </div>
       </form>
     </section>

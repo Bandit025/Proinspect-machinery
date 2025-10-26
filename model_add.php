@@ -100,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
           <div style="margin-top:14px;display:flex;gap:8px;">
             <button class="btn btn-brand" type="submit">บันทึก</button>
-            <a class="btn btn-outline" href="models.php">ยกเลิก</a>
+            <a class="btn btn-outline" href="manage.php">ยกเลิก</a>
           </div>
         </form>
       </section>

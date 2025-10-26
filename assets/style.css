@@ -239,19 +239,19 @@ body.sidebar-open .nav-icon .hamburger:nth-child(3) {
 }
 
 .content {
-    margin-top: var(--nav-h);
+     /* margin-top: var(--nav-h); */
     margin-left: var(--sidebar-w);
     padding: 16px;
-    transition: margin-left .2s ease;
+    transition: margin-left .2s ease; 
 }
 
 /* limit width children of .content */
-.content>* {
+/* .content>* {
     width: 100%;
     max-width: var(--content-max);
     margin-left: auto;
     margin-right: auto;
-}
+} */
 
 /* desktop collapsed */
 .layout.sidebar-collapsed .sidebar {
@@ -377,9 +377,6 @@ body.sidebar-open .nav-icon .hamburger:nth-child(3) {
     margin-top: 20px;
 }
 
-.tr {
-    text-align: right;
-}
 
 .card {
     background: var(--card);
@@ -470,31 +467,82 @@ body.sidebar-open .nav-icon .hamburger:nth-child(3) {
     filter: brightness(.95);
 }
 
+.btn-warning {
+    background: #d9ac25;
+    border: 1px solid #d9ac25;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    filter: brightness(.95);
+}
+
 /* Table */
 .table-wrap {
-    width: 100%;
-    overflow: auto;
     border-radius: 12px;
     border: 1px solid #eee;
     background: #fff;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
+/* Make tables full-width and predictable layout for truncation/overflow */
 .table {
     width: 100%;
+    min-width: 640px;
     border-collapse: collapse;
-    min-width: 720px;
+    table-layout: fixed;
 }
 
 .table th,
 .table td {
     padding: 10px 12px;
     border-bottom: 1px solid var(--line);
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
+/* Sticky header for long tables */
 .table thead th {
     background: #fafafa;
     font-weight: 600;
     text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+/* Subtle hover + zebra */
+.table tbody tr:hover {
+    background: rgba(0, 0, 0, .03);
+}
+
+.table tbody tr:nth-child(2n) {
+    background: rgba(0, 0, 0, .01);
+}
+
+.table .muted {
+    color: var(--muted);
+}
+
+/* Compact spacing on small screens; allow wrapping when needed */
+@media (max-width:720px) {
+    .table {
+        min-width: 0;
+    }
+
+    .table th,
+    .table td {
+        padding: 8px 10px;
+        white-space: normal;
+    }
+
+    .table thead th {
+        position: sticky;
+        top: calc(var(--nav-h));
+    }
 }
 
 /* Badges */

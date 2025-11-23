@@ -61,13 +61,13 @@ $stmIn = $pdo->prepare("
   SELECT COALESCE(SUM(amount),0)
   FROM cashflow
   WHERE type_cashflow = 1
-    AND created_at >= :d1 AND created_at < :d2
+    AND doc_date >= :d1 AND doc_date < :d2
 ");
 $stmEx = $pdo->prepare("
   SELECT COALESCE(SUM(amount),0)
   FROM cashflow
   WHERE type_cashflow = 2
-    AND created_at >= :d1 AND created_at < :d2
+    AND doc_date >= :d1 AND doc_date < :d2
 ");
 $stmIn->execute([':d1' => $d1, ':d2' => $d2p]);
 $stmEx->execute([':d1' => $d1, ':d2' => $d2p]);
@@ -92,8 +92,8 @@ $profit_sales_month = (float) $stmtPl->fetchColumn();
 /* ---------- โหลดรายการ cashflow (อิง created_at ตามช่วงที่เลือก) ---------- */
 $where  = [];
 $params = [];
-$where[] = 'a.created_at >= :f_d1';  $params[':f_d1']  = $d1;
-$where[] = 'a.created_at < :f_d2p';  $params[':f_d2p'] = $d2p;
+$where[] = 'a.doc_date >= :f_d1';  $params[':f_d1']  = $d1;
+$where[] = 'a.doc_date < :f_d2p';  $params[':f_d2p'] = $d2p;
 
 $whereSql = 'WHERE ' . implode(' AND ', $where);
 
@@ -108,7 +108,7 @@ $sql = "SELECT a.*,
         LEFT JOIN models          d ON c.model_id       = d.model_id
         LEFT JOIN brands          e ON d.brand_id       = e.brand_id
         {$whereSql}
-        ORDER BY a.created_at DESC, a.cashflow_id DESC";
+        ORDER BY a.doc_date DESC, a.cashflow_id DESC";
 
 $stmt = $pdo->prepare($sql);
 $stmt->execute($params);
@@ -230,8 +230,9 @@ $cashflows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                 // วันที่แสดงผล: doc_date ถ้ามี ไม่งั้น fallback เป็น created_at
                 $dateStr = '-';
-                if (!empty($r['doc_date']))       $dateStr = date('d/m/Y', strtotime($r['doc_date']));
-                elseif (!empty($r['created_at'])) $dateStr = date('d/m/Y', strtotime($r['created_at']));
+                if (!empty($r['doc_date']))  {
+                    $dateStr = date('d/m/Y', strtotime($r['doc_date']));
+                }
 
                 $machineDisp = $machineCode;
                 $bm = trim($brandName . ' ' . $modelName);

@@ -137,8 +137,8 @@ foreach ($rows as $r) {
               <tr>
                 <th style="width:120px;">วันที่เกิด</th>
                 <th style="width:120px;">ประเภท</th>
-                <th>คำอธิบาย</th>
-                <th class="tr" style="width:90px;">Qty</th>
+                <th style="width:220px;">คำอธิบาย</th>
+                <th class="tr" style="width:90px;">จำนวน</th>
                 <th class="tr" style="width:120px;">ราคา/หน่วย</th>
                 <th class="tr" style="width:120px;">รวม</th>
                 <th class="tr" style="width:160px;">จัดการ</th>

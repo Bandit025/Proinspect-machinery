@@ -90,8 +90,8 @@ function role_name(int $r): string
                   <th>อีเมล</th>
                   <th>สิทธิ์</th>
                   <th>สร้างเมื่อ</th>
+                  <th class="tr" style="width:160px;"></th>
                   <th class="tr" style="width:160px;">การทำงาน</th>
-                  <th class="tr" style="width:160px;">การทำงาน</th>  
                 </tr>
               </thead>
               <tbody>
@@ -104,7 +104,7 @@ function role_name(int $r): string
                     <td><?= htmlspecialchars($r['created_at']) ?></td>
                     <td class="tr">
                       <?php if ($isAdmin) { ?>
-                     
+
                         <?php if ((int)$r['user_id'] !== (int)$_SESSION['user']['id']) { ?>
                           <!-- ป้องกันลบตัวเอง -->
                     <td class="tr">

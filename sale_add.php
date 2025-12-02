@@ -218,6 +218,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                     <option value="1">รวมภาษี</option>
                                     <option value="2">ไม่รวมภาษี</option>
                                     <option value="3">นอกระบบ</option>
+                                    <option value="4">มัดจำ</option>
                                 </select>
                             </div>
                         </div>

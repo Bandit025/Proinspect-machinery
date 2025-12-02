@@ -51,13 +51,7 @@ $params = [
 ];
 
 $sql = "SELECT 
-          s.*,
-          m.code,
-          b.brand_name,
-          mo.model_name,
-          c.customer_name,
-          d.status_name,
-          e.pl_name
+         *
         FROM sales s
         JOIN machines       m  ON m.machine_id  = s.machine_id
         JOIN models         mo ON mo.model_id   = m.model_id
@@ -135,7 +129,6 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
               <button class="btn btn-outline sm" type="submit">ค้นหา</button>
               <a class="btn sm btn-light" href="sales.php">เดือนปัจจุบัน</a>
             </form>
-
             <a class="btn btn-brand sm add-btn" href="sale_add.php">เพิ่มเอกสารขาย</a>
           </div>
         </div>
@@ -144,10 +137,10 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
           <table class="table">
             <thead>
               <tr>
-                <th style="width:110px;">วันที่ขาย</th>
-                <th>เลขเอกสาร</th>
-                <th>รถ</th>
-                <th>ลูกค้า</th>
+                <th style="width:120px;">วันที่ขาย</th>
+                <th style="width:120px;">เลขเอกสาร</th>
+                <th style="width:180px;">รถ</th>
+                <th style="width:180px;">ลูกค้า</th>
                 <th class="tr" style="width:120px;">ค่าขนส่ง</th>
                 <th class="tr" style="width:110px;">ส่วนลด</th>
                 <th class="tr" style="width:130px;">ยอดรวม</th>
@@ -159,7 +152,7 @@ $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
             <tbody>
               <?php foreach ($rows as $r): $id = (int)($r['sale_id'] ?? 0); ?>
                 <tr>
-                  <td><?= htmlspecialchars($r['sold_at']) ?></td>
+                  <td><?= (new DateTime($r['sold_at']))->format('d/m/Y') ?></td>
                   <td><?= htmlspecialchars($r['doc_no'] ?: '-') ?></td>
                   <td>
                     <div><strong><?= htmlspecialchars($r['code']) ?></strong></div>

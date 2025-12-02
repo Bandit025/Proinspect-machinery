@@ -457,3 +457,423 @@ Stack trace:
 [26-Sep-2025 10:25:43 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
 [26-Sep-2025 10:26:01 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 220
 [26-Sep-2025 10:26:01 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Undefined variable $machine in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 127
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php:127) in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 165
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php:127) in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 166
+[26-Sep-2025 22:03:16 Asia/Bangkok] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php:127) in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/export_cashflow.php on line 167
+[29-Sep-2025 10:03:11 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[29-Sep-2025 13:57:46 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[29-Sep-2025 14:06:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[29-Sep-2025 14:06:54 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[29-Sep-2025 14:20:04 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[29-Sep-2025 14:25:34 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[30-Sep-2025 09:32:20 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[30-Sep-2025 09:55:06 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[30-Sep-2025 11:15:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[02-Oct-2025 13:30:43 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[15-Oct-2025 10:22:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[18-Oct-2025 13:22:08 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[18-Oct-2025 13:26:36 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[18-Oct-2025 13:26:59 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[18-Oct-2025 14:12:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[20-Oct-2025 13:41:35 Asia/Bangkok] PHP Warning:  Undefined variable $err in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/add_user.php on line 80
+[20-Oct-2025 20:24:24 Asia/Bangkok] PHP Warning:  Undefined variable $20232428 in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 116
+[20-Oct-2025 20:24:24 Asia/Bangkok] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 116
+[20-Oct-2025 20:29:10 Asia/Bangkok] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php:140
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php(140): number_format()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 140
+[20-Oct-2025 20:29:34 Asia/Bangkok] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php:140
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php(140): number_format()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 140
+[20-Oct-2025 20:29:36 Asia/Bangkok] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php:140
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php(140): number_format()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 140
+[20-Oct-2025 20:33:30 Asia/Bangkok] PHP Warning:  Undefined variable $20232428 in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 116
+[20-Oct-2025 20:33:30 Asia/Bangkok] PHP Deprecated:  number_format(): Passing null to parameter #1 ($num) of type float is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 116
+[20-Oct-2025 20:41:27 Asia/Bangkok] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php:150
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php(150): number_format()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 150
+[20-Oct-2025 20:41:57 Asia/Bangkok] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php:150
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php(150): number_format()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 150
+[20-Oct-2025 20:42:20 Asia/Bangkok] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php:150
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php(150): number_format()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/dashboard.php on line 150
+[20-Oct-2025 21:50:32 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function redirectWith() in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/delete.php:43
+Stack trace:
+#0 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/delete.php on line 43
+[21-Oct-2025 15:27:03 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[23-Oct-2025 12:02:44 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[24-Oct-2025 14:28:06 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[25-Oct-2025 16:20:39 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:39 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:39 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:39 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:39 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:39 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:43 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:43 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:43 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:43 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:43 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:43 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:46 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:46 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:46 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:46 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:46 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:20:46 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:57 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:57 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:57 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:57 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:57 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:57 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:59 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:59 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:59 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:59 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:59 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:21:59 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:03 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:03 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:03 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:03 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:03 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:03 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:04 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:24 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:24 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:24 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:24 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:24 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:24 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:25 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:25 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:25 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:25 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:25 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:22:25 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:03 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:03 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:03 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:03 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:03 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:03 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:03 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:03 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:14 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:14 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:14 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:14 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:14 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:14 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:14 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:23:14 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:09 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:09 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:09 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:09 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:09 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:09 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:09 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:09 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:14 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:14 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:14 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:14 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:14 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:14 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:14 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:14 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:15 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:15 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:15 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:15 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:15 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:15 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:15 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:15 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:19 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:19 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:19 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:19 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:19 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:19 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:19 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:19 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:21 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:21 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:21 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:21 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:21 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:21 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:21 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:21 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:31 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:31 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:31 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:31 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:31 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:31 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:31 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 16:24:31 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:26 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:26 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:26 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:26 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:26 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:26 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:26 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:26 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:34 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:34 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:34 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:34 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:34 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:34 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:34 Asia/Bangkok] PHP Warning:  Undefined variable $row in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[25-Oct-2025 17:22:34 Asia/Bangkok] PHP Warning:  Trying to access array offset on value of type null in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/users.php on line 109
+[29-Oct-2025 13:44:06 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[29-Oct-2025 15:11:23 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[29-Oct-2025 16:06:49 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[31-Oct-2025 11:41:55 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[31-Oct-2025 11:42:05 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[01-Nov-2025 17:16:51 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.supplier_name' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:77
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(77): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 77
+[01-Nov-2025 18:17:15 Asia/Bangkok] PHP Warning:  Undefined variable $d1 in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 51
+[01-Nov-2025 18:17:15 Asia/Bangkok] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 51
+[01-Nov-2025 18:17:15 Asia/Bangkok] PHP Warning:  Undefined variable $d1 in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 51
+[01-Nov-2025 18:17:15 Asia/Bangkok] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 51
+[01-Nov-2025 18:17:15 Asia/Bangkok] PHP Warning:  Undefined variable $profit_sales_month in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 188
+[01-Nov-2025 18:17:15 Asia/Bangkok] PHP Warning:  Undefined variable $profit_sales_month in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/cashflow.php on line 189
+[03-Nov-2025 16:02:47 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[03-Nov-2025 16:03:05 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[03-Nov-2025 16:03:36 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[03-Nov-2025 16:04:02 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[04-Nov-2025 10:33:16 Asia/Bangkok] PHP Warning:  Undefined variable $acquired_at in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/acquisition_edit.php on line 315
+[04-Nov-2025 10:33:16 Asia/Bangkok] PHP Deprecated:  strtotime(): Passing null to parameter #1 ($datetime) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/acquisition_edit.php on line 316
+[04-Nov-2025 10:44:52 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[05-Nov-2025 15:33:39 Asia/Bangkok] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 't.capitalizable' in 'WHERE' in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php:77
+Stack trace:
+#0 /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php(77): PDOStatement->execute()
+#1 {main}
+  thrown in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/expenses.php on line 77
+[08-Nov-2025 16:46:58 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[10-Nov-2025 14:06:08 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[11-Nov-2025 14:12:36 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[12-Nov-2025 10:30:17 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[13-Nov-2025 14:48:12 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[14-Nov-2025 14:41:45 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[17-Nov-2025 10:07:37 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[17-Nov-2025 10:08:18 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[17-Nov-2025 10:11:00 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231
+[18-Nov-2025 13:26:38 Asia/Bangkok] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /home/u399031755/domains/lime-goldfinch-126850.hostingersite.com/public_html/machine_edit.php on line 231

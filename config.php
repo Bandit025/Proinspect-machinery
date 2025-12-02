@@ -3,9 +3,9 @@
 date_default_timezone_set('Asia/Bangkok');
 
 $DB_HOST = 'localhost';
-$DB_NAME = 'Macro';
-$DB_USER = 'root';
-$DB_PASS = 'root';
+$DB_NAME = 'u399031755_Maccro';
+$DB_USER = 'u399031755_Maccro';
+$DB_PASS = 'Thailand@2026';
 
 try {
   $pdo = new PDO(
@@ -41,4 +41,11 @@ if (!function_exists('current_fullname')) {
     return $u['email'] ?? 'ผู้ใช้ระบบ';
   }
 }
+
+
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+ini_set('log_errors', '1');
+ini_set('error_log', __DIR__ . '/php-error.log'); // จะสร้างไฟล์ log ในโฟลเดอร์เดียวกัน
+error_reporting(E_ALL);
 

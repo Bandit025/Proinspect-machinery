@@ -121,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $sql_cashflow = "INSERT INTO cashflow (doc_date, type_cashflow, type2_cashflow, expense_id, amount, remark) VALUES (:doc_date, :type, :type2, :expense_id, :amount, :remark)";
     $stmt2 = $pdo->prepare($sql_cashflow);
-    $stmt2->bindValue(':doc_date', $doc_date, PDO::PARAM_STR);
+    $stmt2->bindValue(':doc_date', $occurred_at, PDO::PARAM_STR);
     $stmt2->bindValue(':type', $type_cashflow, PDO::PARAM_INT);
     $stmt2->bindValue(':type2', $type2_cashflow, PDO::PARAM_INT);
     $stmt2->bindValue(':expense_id', $acquire_id, PDO::PARAM_INT);

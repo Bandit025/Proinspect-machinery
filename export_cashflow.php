@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-ini_set('display_errors','0');   // ไม่แสดง warning บน prod
+ini_set('display_errors','0');
 error_reporting(E_ALL);
-ob_start();                      // กัน output หลุดก่อนส่ง header
+ob_start();
 date_default_timezone_set('Asia/Bangkok');
 
 require __DIR__ . '/config.php';
@@ -29,7 +29,7 @@ use PhpOffice\PhpSpreadsheet\Style\Fill;
 $d1 = trim($_GET['d1'] ?? '');
 $d2 = trim($_GET['d2'] ?? '');
 
-$validateYmd = function ($s) {
+$validateYmd = function (string $s) : string {
     if ($s === '') return '';
     $dt = DateTime::createFromFormat('Y-m-d', $s);
     return ($dt && $dt->format('Y-m-d') === $s) ? $s : '';
@@ -37,30 +37,27 @@ $validateYmd = function ($s) {
 $d1 = $validateYmd($d1);
 $d2 = $validateYmd($d2);
 
-/* กติกาเดียวกับหน้า list:
-   - ถ้าเลือก d1 แล้ว d2 ว่าง -> d2 = d1
-   - ถ้า d2 < d1 -> d1 = d2 (ช่วงเป็นวันเดียวของ d2)
-*/
+/* ค่าเริ่มต้นเหมือนหน้า list: ถ้าไม่ส่ง d1,d2 -> เดือนปัจจุบัน */
+if ($d1 === '' && $d2 === '') {
+    $d1 = date('Y-m-01');   // วันแรกของเดือนนี้
+    $d2 = date('Y-m-t');    // วันสุดท้ายของเดือนนี้
+}
+
+/* กติกาเดียวกับหน้า list */
 if ($d1 && !$d2) $d2 = $d1;
 if ($d1 && $d2 && $d2 < $d1) $d1 = $d2;
 
-// ใช้ half-open สำหรับขอบสิ้นสุด
+/* half-open สำหรับขอบบน */
 $d2p = $d2 ? date('Y-m-d', strtotime($d2 . ' +1 day')) : '';
 
-/* ---------- WHERE & PARAMS (doc_date ถ้ามี ไม่งั้นใช้ created_at) ---------- */
-$where = [];
+/* ---------- WHERE & PARAMS (อิง created_at ทั้งหมด) ---------- */
+$where  = [];
 $params = [];
-if ($d1) {
-    $where[] = '((a.doc_date IS NOT NULL AND a.doc_date >= :d1) OR (a.doc_date IS NULL AND a.created_at >= :d1))';
-    $params[':d1'] = $d1;
-}
-if ($d2p) {
-    $where[] = '((a.doc_date IS NOT NULL AND a.doc_date < :d2p) OR (a.doc_date IS NULL AND a.created_at < :d2p))';
-    $params[':d2p'] = $d2p;
-}
+if ($d1)  { $where[] = 'a.created_at >= :d1';  $params[':d1']  = $d1; }
+if ($d2p) { $where[] = 'a.created_at < :d2p';  $params[':d2p'] = $d2p; }
 $whereSql = $where ? ('WHERE ' . implode(' AND ', $where)) : '';
 
-/* ---------- ดึงข้อมูลเหมือนหน้าที่เห็น (ORDER เดียวกัน) ---------- */
+/* ---------- ดึงข้อมูลให้ตรงกับหน้าจอ ---------- */
 $sql = "
   SELECT a.cashflow_id, a.doc_date, a.created_at, a.type_cashflow, a.amount, a.doc_no, a.remark,
          b.type_name AS type2_name,
@@ -87,12 +84,14 @@ $sheet->setCellValue('A1', 'รายงานกระแสเงินสด 
 $filterText = [];
 if ($d1) $filterText[] = "จาก {$d1}";
 if ($d2) $filterText[] = "ถึง {$d2}";
-$sheet->setCellValue('A2', $filterText ? ('ตัวกรอง: ' . implode(' / ', $filterText)) : 'ตัวกรอง: ทั้งหมด');
+$sheet->setCellValue('A2', $filterText ? ('ตัวกรอง (created_at): ' . implode(' / ', $filterText)) : 'ตัวกรอง: ทั้งหมด');
 
 $headerRow = 4;
 $headers = ['วันที่', 'ประเภท', 'ประเภทย่อย', 'เลขเอกสาร', 'รถ', 'จำนวนเงิน', 'หมายเหตุ'];
 $cols = range('A', 'G');
-foreach ($headers as $i => $h) $sheet->setCellValue($cols[$i] . $headerRow, $h);
+foreach ($headers as $i => $h) {
+    $sheet->setCellValue($cols[$i] . $headerRow, $h);
+}
 
 /* header style */
 $sheet->getStyle("A{$headerRow}:G{$headerRow}")->getFont()->setBold(true);
@@ -107,18 +106,17 @@ $totalIncome  = 0.0;
 $totalExpense = 0.0;
 
 foreach ($rows as $row) {
+    // แสดงผลวันที่: มี doc_date ใช้ doc_date, ไม่มีก็ใช้ created_at
     $dateStr = $row['doc_date'] ?: $row['created_at'];
     $typeStr = ((int)$row['type_cashflow'] === 1) ? 'รายได้' : 'รายจ่าย';
     $signedAmount = ((int)$row['type_cashflow'] === 1) ? (float)$row['amount'] : -(float)$row['amount'];
 
-    // สะสมยอดรวม (เป็นค่าบวกทั้งคู่)
     if ((int)$row['type_cashflow'] === 1) {
         $totalIncome  += (float)$row['amount'];
     } else {
         $totalExpense += (float)$row['amount'];
     }
 
-    // สร้างชื่อรถ/รุ่น
     $machineCode = (string)($row['machine_code'] ?? '');
     $brandName   = (string)($row['brand_name']   ?? '');
     $modelName   = (string)($row['model_name']   ?? '');
@@ -131,12 +129,12 @@ foreach ($rows as $row) {
     $sheet->setCellValue("C{$r}", $row['type2_name'] ?? '-');
     $sheet->setCellValue("D{$r}", $row['doc_no'] ?: '-');
     $sheet->setCellValue("E{$r}", $machine);
-    $sheet->setCellValue("F{$r}", $signedAmount);           // บวก/ลบตามประเภท
+    $sheet->setCellValue("F{$r}", $signedAmount);
     $sheet->setCellValue("G{$r}", $row['remark'] ?? '');
     $r++;
 }
 
-/* สรุปยอดบนแถว 3 (ไม่มีสุทธิ) */
+/* สรุปยอด (แถว 3) */
 $sheet->setCellValue('A3', 'รวมรายได้');
 $sheet->setCellValue('B3', $totalIncome);
 $sheet->setCellValue('C3', 'รวมรายจ่าย');
@@ -160,9 +158,7 @@ $file = 'cashflow';
 if ($d1 || $d2) $file .= '_' . ($d1 ?: 'start') . '_' . ($d2 ?: 'end');
 $file .= '.xlsx';
 
-/* เคลียร์ output ที่ค้างก่อนส่ง header/ไฟล์ */
 if (ob_get_length()) { ob_end_clean(); }
-
 header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
 header('Content-Disposition: attachment; filename="'.$file.'"');
 header('Cache-Control: max-age=0');

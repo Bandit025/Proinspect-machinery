@@ -1,1 +1,0 @@
-# Proinspect-machinery

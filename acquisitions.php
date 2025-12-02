@@ -11,31 +11,46 @@ $err = $_GET['error'] ?? '';
 if (empty($_SESSION['csrf'])) $_SESSION['csrf'] = bin2hex(random_bytes(16));
 $csrf = $_SESSION['csrf'];
 
-$q  = trim($_GET['q']  ?? '');
-$d1 = trim($_GET['d1'] ?? '');
-$d2 = trim($_GET['d2'] ?? '');
+/* ---------- Filter: เลือกเดือนเดียว (GET m = YYYY-MM) ---------- */
+$m = trim($_GET['m'] ?? '');
+
+$validateYm = function ($s) {
+  if ($s === '') return '';
+  $dt = DateTime::createFromFormat('Y-m', $s);
+  return ($dt && $dt->format('Y-m') === $s) ? $s : '';
+};
+
+$m = $validateYm($m);
+if ($m === '') {
+  // ค่าเริ่มต้น = เดือนปัจจุบัน
+  $m = (new DateTime('first day of this month'))->format('Y-m');
+}
+
+// คำนวณช่วงวันที่จาก acquired_at
+$start = DateTime::createFromFormat('Y-m-d', $m . '-01');
+$next  = (clone $start)->modify('first day of next month');
+$d1    = $start->format('Y-m-d');
+$d2    = $next->format('Y-m-d'); // ใช้ < :d2 เพื่อครอบทั้งเดือน ไม่ต้องสน time
 
 /* ===== DEBUG =====
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 */
 
-$params = [];
+$params = [
+  ':d1' => $d1,
+  ':d2' => $d2,
+];
+
 $sql = "SELECT a.*, m.code, b.model_name, c.brand_name, s.supplier_name
         FROM acquisitions a
         JOIN machines  m  ON m.machine_id  = a.machine_id
         JOIN models    b  ON b.model_id    = m.model_id
         JOIN brands    c  ON b.brand_id    = c.brand_id
         JOIN suppliers s  ON s.supplier_id = a.supplier_id
-        WHERE 1=1";
-if ($q !== '') {
-  $sql .= " AND (a.doc_no LIKE :q OR m.code LIKE :q OR c.brand_name LIKE :q OR s.supplier_name LIKE :q)";
-  $params[':q'] = "%{$q}%";
-}
-if ($d1 !== '') { $sql .= " AND a.acquired_at >= :d1"; $params[':d1'] = $d1; }
-if ($d2 !== '') { $sql .= " AND a.acquired_at <= :d2"; $params[':d2'] = $d2; }
+        WHERE a.acquired_at >= :d1 AND a.acquired_at < :d2
+        ORDER BY a.acquired_at DESC, a.acquisition_id DESC";
 
-$sql .= " ORDER BY a.acquired_at DESC, a.acquisition_id DESC";
 $stm = $pdo->prepare($sql);
 $stm->execute($params);
 $rows = $stm->fetchAll(PDO::FETCH_ASSOC);
@@ -48,7 +63,6 @@ function thb($n){ return $n !== null ? '฿' . number_format((float)$n, 2) : '-'
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>ซื้อรถเข้า — ProInspect Machinery</title>
-  <!-- ใช้พาธแบบ absolute กันพลาด -->
   <link rel="stylesheet" href="assets/style.css?v=9">
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -67,17 +81,11 @@ function thb($n){ return $n !== null ? '฿' . number_format((float)$n, 2) : '-'
         <div class="card-head">
           <h3 class="h5">รายการ</h3>
 
-          <!-- ✅ ใช้ toolbar + search-form เพื่อ stack บนมือถือ -->
           <div class="toolbar">
+            <!-- ค้นหาแบบเลือกเดือนเดียว -->
             <form method="get" action="acquisitions.php" class="search-form">
-              <input class="input sm" type="text" name="q"
-                     placeholder="เลขเอกสาร/รหัสรถ/ยี่ห้อ/ผู้ขาย"
-                     value="<?= htmlspecialchars($q) ?>">
-
-              <input class="input sm" type="date" name="d1" value="<?= htmlspecialchars($d1) ?>">
-              <input class="input sm" type="date" name="d2" value="<?= htmlspecialchars($d2) ?>">
-
-              <button class="btn btn-outline sm" type="submit">ค้นหา</button>
+              <input class="input sm" type="month" name="m" value="<?= htmlspecialchars($m) ?>" />
+              <button class="btn btn-outline sm" type="submit">แสดงเดือนนี้</button>
             </form>
 
             <a class="btn btn-brand sm add-btn" href="acquisition_add.php">เพิ่มเอกสาร</a>
@@ -88,7 +96,7 @@ function thb($n){ return $n !== null ? '฿' . number_format((float)$n, 2) : '-'
           <table class="table">
             <thead>
               <tr>
-                <th style="width:120px;">วันที่ซื้อ</th>
+                <th style="width:50px;">วันที่ซื้อ</th>
                 <th style="width:120px;">เลขเอกสาร</th>
                 <th style="width:240px;">รถ</th>
                 <th style="width:140px;">ราคา</th>
@@ -96,9 +104,10 @@ function thb($n){ return $n !== null ? '฿' . number_format((float)$n, 2) : '-'
               </tr>
             </thead>
             <tbody>
-              <?php foreach ($rows as $r): $id = (int)$r['acquisition_id']; ?>
+              <?php foreach ($rows as $r){ 
+                $id = $r['acquisition_id']; ?>
                 <tr>
-                  <td><?= htmlspecialchars($r['acquired_at']) ?></td>
+                  <td><?= (new DateTime($r['acquired_at']))->format('d/m/Y') ?></td>
                   <td><?= htmlspecialchars($r['doc_no'] ?: '-') ?></td>
                   <td>
                     <div><strong><?= htmlspecialchars($r['code']) ?></strong></div>
@@ -118,7 +127,7 @@ function thb($n){ return $n !== null ? '฿' . number_format((float)$n, 2) : '-'
                     </form>
                   </td>
                 </tr>
-              <?php endforeach; ?>
+              <?php }; ?>
               <?php if (!$rows): ?>
                 <tr><td colspan="5" class="muted">ไม่พบข้อมูล</td></tr>
               <?php endif; ?>
@@ -129,7 +138,6 @@ function thb($n){ return $n !== null ? '฿' . number_format((float)$n, 2) : '-'
     </main>
   </div>
 
-  <!-- สคริปต์ควบคุม sidebar/hamburger (ใช้ตัวเดียวทุกหน้า) -->
   <script src="/assets/script.js?v=4"></script>
 
   <?php if ($err): ?>

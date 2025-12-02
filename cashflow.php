@@ -56,7 +56,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['ajax'])) {
   exit;
 }
 
-/* ---------- KPI: เดือนที่เลือก (อิง created_at) ---------- */
+/* ---------- KPI: เดือนที่เลือก (อิง doc_date) ---------- */
 $stmIn = $pdo->prepare("
   SELECT COALESCE(SUM(amount),0)
   FROM cashflow
@@ -89,7 +89,7 @@ $stmtPl->execute([':d1' => $d1, ':d2' => $d2p]);
 $profit_sales_month = (float) $stmtPl->fetchColumn();
 
 
-/* ---------- โหลดรายการ cashflow (อิง created_at ตามช่วงที่เลือก) ---------- */
+/* ---------- โหลดรายการ cashflow (อิง doc_date ตามช่วงที่เลือก) ---------- */
 $where  = [];
 $params = [];
 $where[] = 'a.doc_date >= :f_d1';  $params[':f_d1']  = $d1;

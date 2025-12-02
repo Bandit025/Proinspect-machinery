@@ -3,9 +3,9 @@
 date_default_timezone_set('Asia/Bangkok');
 
 $DB_HOST = 'localhost';
-$DB_NAME = 'u399031755_Maccro';
-$DB_USER = 'u399031755_Maccro';
-$DB_PASS = 'Thailand@2026';
+$DB_NAME = 'Maccro';
+$DB_USER = 'root';
+$DB_PASS = 'root';
 
 try {
   $pdo = new PDO(
